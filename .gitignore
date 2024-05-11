@@ -1,4 +1,4 @@
 /apache-tomcat-11.0.0/
 /.idea/
-!/boot/.gradle/
-!/boot/build/
+boot/.gradle/
+boot/build/
