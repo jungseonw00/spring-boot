@@ -1,4 +1,7 @@
 .idea/
 apache-tomcat-11.0.0/
-.gradle/
-build/
+*/.gradle/
+*/build/
+*/out/
+*/target/
+*/.idea/
