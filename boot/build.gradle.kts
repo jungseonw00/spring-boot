@@ -5,8 +5,6 @@ plugins {
 	id("io.spring.dependency-management") version "1.1.4"
     kotlin("jvm") version "1.9.23"
     kotlin("plugin.spring") version "1.9.23"
-    kotlin("plugin.allopen") version "1.9.23"
-    kotlin("plugin.jpa") version "1.9.23"
     kotlin("plugin.lombok") version "1.9.23"
     kotlin("kapt") version "1.9.23"
     idea
@@ -26,10 +24,8 @@ repositories {
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
-//    implementation(files("libs/memory-v1-0.0.1-SNAPSHOT.jar"))
-    implementation(files("libs/memory-v2-0.0.1-SNAPSHOT.jar"))
-
-    // kotlin
+    implementation(files("libs/memory-v2.jar"))
+    testImplementation("org.springframework.boot:spring-boot-starter-test")
     implementation("org.jetbrains.kotlin:kotlin-stdlib")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("javax.xml.bind:jaxb-api:2.4.0-b180830.0359")

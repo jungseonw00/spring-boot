@@ -9,12 +9,12 @@ import org.springframework.context.annotation.Bean
 class MemoryAutoConfig {
 
     @Bean
-    fun memoryController(): MemoryController {
-        return MemoryController(memoryFinder())
+    fun memoryFinder(): MemoryFinder {
+        return MemoryFinder()
     }
 
     @Bean
-    fun memoryFinder(): MemoryFinder {
-        return MemoryFinder()
+    fun memoryController(): MemoryController {
+        return MemoryController(memoryFinder())
     }
 }

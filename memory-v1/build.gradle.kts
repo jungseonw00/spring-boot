@@ -23,7 +23,7 @@ repositories {
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web:3.2.5")
     implementation("org.jetbrains.kotlin:kotlin-reflect:1.9.23")
-
+    testImplementation("org.springframework.boot:spring-boot-starter-test:3.2.5")
     // kotlin
     implementation("org.jetbrains.kotlin:kotlin-stdlib:1.9.23")
     implementation("javax.xml.bind:jaxb-api:2.4.0-b180830.0359")
